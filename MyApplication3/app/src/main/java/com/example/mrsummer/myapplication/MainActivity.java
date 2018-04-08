@@ -55,9 +55,9 @@ public class MainActivity extends AppCompatActivity {
                 Intent i= new Intent(MainActivity.this,fifthActivity.class);
                 startActivity(i);
                 finish();
-            }
+                }
         });
-
+ 
         button_five.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

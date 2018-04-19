@@ -21,6 +21,8 @@
         <activity android:name=".forthActivity"></activity>
         <activity android:name=".fifthActivity"></activity>
         <activity android:name=".sixthActivity"></activity>
+        <activity android:name=".horizontal"></activity>
+        <activity android:name=".left"></activity>
         >
     </application>
 

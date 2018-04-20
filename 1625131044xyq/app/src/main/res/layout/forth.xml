@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
->
+<FrameLayout    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <FrameLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+    <ViewFlipper
+        android:id="@+id/play"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:flipInterval="100"
+        >
 
         <ImageView
             android:id="@+id/view01"
             android:layout_width="140dp"
             android:layout_height="140dp"
             android:layout_gravity="center"
-            android:background="@color/color1"
-         />
+            android:background="@color/color1" />
 
         <ImageView
             android:id="@+id/view02"
@@ -48,7 +48,12 @@
             android:layout_gravity="center"
             android:background="@color/color5"
            />
-
+    </ViewFlipper>
+    <Button
+        android:onClick="auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自动播放" />
         <Button
             android:id="@+id/four_back"
             android:layout_width="fill_parent"
@@ -58,4 +63,3 @@
             />
 
     </FrameLayout>
-</android.support.constraint.ConstraintLayout>

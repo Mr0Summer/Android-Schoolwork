@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainAcitvity">
+
+    <EditText
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cursorVisible="false"
+        android:editable="true"
+        android:textSize="10pt"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+    <Button
+        android:id="@+id/nm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="匿名内部类"
+        app:layout_constraintTop_toBottomOf="@id/outside" />
+
+    <Button
+        android:id="@+id/outside"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="外部类"
+        app:layout_constraintTop_toBottomOf="@+id/bn" />
+
+    <Button
+        android:id="@+id/bn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="内部类" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/act"
+        android:text="绑定到标签"
+        android:onClick="clickHandler"
+        />
+
+    <Button
+        android:id="@+id/act"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Activity"
+
+        app:layout_constraintTop_toBottomOf="@id/nm" />
+
+
+</android.support.constraint.ConstraintLayout>

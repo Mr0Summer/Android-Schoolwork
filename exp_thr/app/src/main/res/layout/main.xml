@@ -10,63 +10,47 @@
         android:id="@+id/txt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:editable="true"
         android:cursorVisible="false"
+        android:editable="true"
         android:textSize="10pt"
-        app:layout_constraintBottom_toBottomOf="parent"
-    />
-    <EditText
-        android:id="@+id/nm_txt"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:editable="false"
-        android:textSize="10pt"
-        app:layout_constraintBottom_toTopOf="@id/txt"
-        >
-    </EditText>
+        app:layout_constraintBottom_toBottomOf="parent" />
+
 
     <Button
         android:id="@+id/nm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/outside"
-        android:text="匿名内部类" />
+        android:text="匿名内部类"
+        app:layout_constraintTop_toBottomOf="@id/outside" />
+
     <Button
         android:id="@+id/outside"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="外部类"
-        app:layout_constraintTop_toBottomOf="@+id/bn"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/bn" />
+
     <Button
         android:id="@+id/bn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="内部类"
-        />
+        android:text="内部类" />
 
-
-    <EditText
-        android:id="@+id/act_txt"
+    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:editable="false"
-        android:textSize="10pt"
-        app:layout_constraintBottom_toTopOf="@id/nm_txt"
+        app:layout_constraintTop_toBottomOf="@+id/act"
+        android:text="绑定到标签"
+        android:onClick="clickHandler"
         />
+
     <Button
         android:id="@+id/act"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Activity"
 
-        app:layout_constraintTop_toBottomOf="@id/nm"
-        />
-
-
-
-
-
+        app:layout_constraintTop_toBottomOf="@id/nm" />
 
 
 </android.support.constraint.ConstraintLayout>
